@@ -1,0 +1,81 @@
+
+header {
+    position        : sticky;
+    width           : 100%;
+    height          : 80px;
+    background-color: blueviolet;
+    justify-content: center;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+/* .change{
+    width: 168px;
+    height: 42px;
+}
+.language{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+} */
+.List-pill{
+    display: none;
+}
+@media screen and (min-width:744px){
+    .List-pill{
+        background-color: #ffffff;
+        width: 77px;
+        height: 42px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        position        : relative;
+        cursor: pointer;
+    }
+    .list-group{
+        position: absolute;
+        top: 53px;
+        right: 0;
+        width: 225px;
+        border-radius: 70%;
+        
+        display: none;
+    }
+    .ham {
+        display: block;
+        content         : '';
+        height          : 2px;
+        width           : 15px;
+        background-color: #222222;
+        margin          : auto;
+        box-shadow      : 0px 4px 0px #222222,
+                          0px -4px 0px #222222;
+            
+    }
+    .pic{
+        width: 30px;
+        height: 30px;
+        background-color: chocolate;
+        position        : relative;
+        right: 5px;
+    }
+    .list-group-item{
+        padding: 15px;
+
+    }
+    .list-group a{
+        text-decoration: none;
+        
+    }
+    
+    .list-group li:hover{
+        background-color: #E7F0EB;
+    }
+    .list-group li{
+        font-size: .5rem;
+        line-height:18px;
+    }
+}
