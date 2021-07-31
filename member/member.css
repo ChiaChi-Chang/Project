@@ -10,16 +10,6 @@ header {
     align-items: center;
 }
 
-
-/* .change{
-    width: 168px;
-    height: 42px;
-}
-.language{
-    background-color: black;
-    width: 10px;
-    height: 10px;
-} */
 .List-pill{
     display: none;
 }
@@ -35,6 +25,7 @@ header {
         position        : relative;
         cursor: pointer;
     }
+    
     .list-group{
         position: absolute;
         top: 53px;
