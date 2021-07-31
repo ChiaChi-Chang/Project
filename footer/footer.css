@@ -12,27 +12,20 @@ footer h4{
     margin-top: 10px;
     
 }
-footer .footerbox .listRow .col-sm-12{
+footer .footerBox .listRow .col-sm-12{
     border-bottom:1px #dddddd solid;
 }
-.footerbox{
+.footerBox{
     width: 90%;
     margin: auto;
 }
-.listRow a{
-    
-    
-    
-}
+
 
 a:hover{
     text-decoration: underline;
     color: #484848;
 }
-li{
-    
-    
-}
+
 
 footer ul li a{
     line-height: 15px;
@@ -44,9 +37,7 @@ footer ul li a{
 footer .list-group-item{
     background-color: #f7f7f7;
 }
-.listRow{
-    
-}
+
 
 footer .copyright a{
     text-decoration: none;
@@ -55,23 +46,20 @@ footer .copyright a{
     
 }
 footer .end{
-    
     display: flex;
     border-top: 1px solid #dddddd;
     flex-direction:column-reverse ;
-    
-   
 }
-footer .end .copyright{
-    align-items: center;
-}
+
+footer .end .copyright,
 footer .end .social{
     align-items: center;
 }
+
 footer .end .social a{
     display: none;
 }
-@media screen and (min-width:744px){
+@media screen and (min-width:500px){
     footer .listRow{
         width: 100%;
         padding-top: 30px;
