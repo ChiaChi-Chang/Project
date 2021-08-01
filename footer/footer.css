@@ -59,7 +59,7 @@ footer .end .social{
 footer .end .social a{
     display: none;
 }
-@media screen and (min-width:500px){
+@media screen and (min-width:750px){
     footer .listRow{
         width: 100%;
         padding-top: 30px;

@@ -13,7 +13,7 @@ header {
 .List-pill{
     display: none;
 }
-@media screen and (min-width:500px){
+@media screen and (min-width:750px){
     .List-pill{
         background-color: #ffffff;
         width: 77px;
