@@ -1,98 +1,130 @@
-footer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    justify-content: center;
-    background-color: #f7f7f7;
-}
-
-footer h4{
-    font-size: 12px !important;
-    margin-top: 10px;
-    
-}
-footer .footerBox .listRow .col-sm-12{
-    border-bottom:1px #dddddd solid;
-}
-.footerBox{
-    width: 90%;
-    margin: auto;
-}
-
-
-a:hover{
-    text-decoration: underline;
-    color: #484848;
-}
-
-
-footer ul li a{
-    line-height: 15px;
-    color: #484848;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-footer .list-group-item{
-    background-color: #f7f7f7;
-}
-
-
-footer .copyright a{
-    text-decoration: none;
-    color: #484848;
-    font-size: 14px;
-    
-}
-footer .end{
-    display: flex;
-    border-top: 1px solid #dddddd;
-    flex-direction:column-reverse ;
-}
-
-footer .end .copyright,
-footer .end .social{
-    align-items: center;
-}
-
-footer .end .social a{
-    display: none;
-}
-@media screen and (min-width:750px){
-    footer .listRow{
+    footer {
         width: 100%;
-        padding-top: 30px;
-        margin: auto;
-    }
-    footer .listRow .col-md-3{
-        justify-content: center;
-    }
-
-    footer .end{
-        
         display: flex;
-        
-        flex-direction:row ;
-        
-        justify-content: space-between;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        background-color: #f7f7f7;
+        bottom: 0;
+    }
+    
+    footer h4 {
+        display: inline-block;
+        font-size: 18px;
+        padding: 0;
         
     }
-    footer .end .copyright{
+    .footerBox .listRow {
+        margin: 40px 0;
+    }
+    footer .footerBox .listRow .col-sm-12 {
+        border-bottom: 1px #dddddd solid;
+    }
+    
+    .footerBox .listRow ul {
         display: flex;
         flex-direction: row;
-        line-height: 60px
     }
-    footer .end .social a{
+    
+    .footerBox {
+        width: 90%;
+        margin: auto;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+        color: #484848;
+    }
+    
+    footer ul li a {
+        line-height: 15px;
+        color: #484848;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    footer .list-group-item {
+        background-color: #f7f7f7;
+    }
+    footer .listRow .col-md-3 .list-group .footerLi{
+        display: flex;
+        width: 50%;
+    }
+    .footerBox .listRow ul .footerLi .footerListItem{
+        display: flex;
+        white-space: nowrap;
+    }
+    footer .copyright a {
+        text-decoration: none;
+        color: #484848;
+        font-size: 14px;
+    }
+    
+    footer .end {
+        display: flex;
+        border-top: 1px solid #dddddd;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    footer .end .copyright {
+        flex-direction: column;
+    }
+    
+    footer .end .copyright .webName {
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer .end .social {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    footer .end .social a {
         display: flex;
         color: black;
         text-decoration: none;
     }
-    footer .end .social{
-        display: flex;
-        flex-direction: row;
-        line-height: 60px;
-        justify-content: space-around;
-    }
     
-}
+    @media screen and (min-width:750px) {
+        footer .listRow {
+            width: 100%;
+            padding-top: 30px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        footer .listRow .col-md-3 {
+            width: 25%;
+        }
+        footer .listRow .col-md-3 .list-group .footerLi .footerListItem{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .footerBox .listRow ul {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        footer .end {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        footer .end .copyright {
+            display: flex;
+            flex-direction: row;
+            line-height: 60px;
+        }
+        footer .end .social {
+            width: 25%;
+            display: flex;
+            flex-direction: row;
+            line-height: 60px;
+            justify-content: space-around;
+        }
+    }
